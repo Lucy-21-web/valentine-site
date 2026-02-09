@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="setup-container" class="card">
+        <div class="emoji">🌸</div>
+        <h2>Welcome! ❤️</h2>
+        <p>Enter your name to start:</p>
+        <input type="text" id="visitorName" placeholder="Your Name" required>
+        <button id="startBtn">Enter</button>
+    </div>
+
+    <div id="main-container" class="card" style="display: none;">
+        <div class="emoji">🐱</div>
+        <h1 id="headline">Will you be my Valentine?</h1>
+        <div class="btn-group">
+            <button id="yesBtn">Yes 💖</button>
+            <button id="noBtn">No 🙈</button>
+        </div>
+        <p id="subText">"No" seems a bit shy</p>
+    </div>
+
+    <div id="success-screen" class="card" style="display: none;"></div>
+
+    <form id="notify-form" action="https://formspree.io/f/xjgekwwp" method="POST" style="display:none;">
+        <input type="hidden" name="Visitor_Name" id="hiddenName">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
